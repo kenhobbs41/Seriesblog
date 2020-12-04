@@ -1,0 +1,92 @@
+body{
+	margin:0;
+	padding:0;
+	background:url("https://proxy-ap-south1.goorm.io//service/5edcf52b0f4852dbe55cdf27_dcqyub1y7dLS2OsZ2mh.run-ap-south1.goorm.io/9080//file/load/retro-3077539_1920.png?path=d29ya3NwYWNlJTJGQ29weSUyRnB1YmxpYyUyRnN0eWxlc2hlZXRzJTJGcmV0cm8tMzA3NzUzOV8xOTIwLnBuZw==&docker_id=dcqyub1y7dLS2OsZ2mh&secure_session_id=4H00I0W7yEpXH4KMpzGn842tylS1GSQ5");
+	background-size:cover;
+	background-position:center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.loginbox{
+	width:320px;
+	height:420px;
+	background:rgba(0,0,0,0.7);
+	color:#fff;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	padding:70px 30px;
+}
+
+.avatar{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top:-50px;
+	left:calc(50% - 50px);
+}
+
+h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:22px;
+}
+
+.loginbox p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+
+.loginbox input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+	border:none;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:15px;
+}
+
+.loginbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	color:white;
+	font-size:18px;
+	border-radius:20px;
+}
+
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	
+}
+
+.loginbox a{
+	text-decoration:none;
+	font-size:12px;
+	line-height:20px;
+
+}
+
+.loginbox i{
+	margin-left:-30px;
+	cursor:pointer;
+	/* color:invert; */
+	margin-bottom:40px;
+}
+
+
+ 
+
+

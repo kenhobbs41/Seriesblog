@@ -1,0 +1,47 @@
+<%- include("partials/header2") %>
+
+
+<div class="loginbox">
+	<img src="https://proxy-ap-south1.goorm.io//service/5edcf52b0f4852dbe55cdf27_dcqyub1y7dLS2OsZ2mh.run-ap-south1.goorm.io/9080//file/load/red%20avatar.png?path=d29ya3NwYWNlJTJGQ29weSUyRnB1YmxpYyUyRnN0eWxlc2hlZXRzJTJGcmVkJTIwYXZhdGFyLnBuZw==&docker_id=dcqyub1y7dLS2OsZ2mh&secure_session_id=QeheV7hQiU0zRnUHhG2oAimLr77IQXG7" class="avatar">
+	<h1>Login Here</h1>
+<form action="/login" method="POST">
+	<p>Username</p>
+	<input type="text" name="username" placeholder="Enter Username">
+	<p>Password</p>
+	<input class="logpass" type="password" name="password" placeholder="Enter Password">
+	<input	type="submit" name="submit" value="Login">
+	<p>Don't have an account? <a href="/register">Sign Up</a> 
+	</form>
+</div> 
+
+<!-- 
+<div class="loginbox">
+	<img src="https://proxy-ap-south1.goorm.io//service/5edcf52b0f4852dbe55cdf27_dcqyub1y7dLS2OsZ2mh.run-ap-south1.goorm.io/9080//file/load/red%20avatar.png?path=d29ya3NwYWNlJTJGQ29weSUyRnB1YmxpYyUyRnN0eWxlc2hlZXRzJTJGcmVkJTIwYXZhdGFyLnBuZw==&docker_id=dcqyub1y7dLS2OsZ2mh&secure_session_id=QeheV7hQiU0zRnUHhG2oAimLr77IQXG7" class="avatar">
+	<h1>Login Here</h1>
+<form action="/login" method="POST">
+	<p>Username</p>
+	<input type="text" name="" placeholder="Enter Username">
+	<p>Password</p>
+	<input type="password" name="" id="password" placeholder="Enter Password">
+	<!-- <i class="fa fa-eye" id="togglePassword"></i> 
+	<input	type="submit" name="" value="Login">
+	<p>Don't have an account? <a href="/register">Sign Up</a> 
+	</form>
+</div>
+ -->
+<!-- <script>
+	
+	const togglePassword = document.querySelector("#togglePassword");
+	const password = document.querySelector("#password");
+	
+	togglePassword.addEventListener("click",function(e){
+		const type = password.getAttribute("type") === "password" ? "text" : "password";
+		password.setAttribute("type",type);
+		this.classList.toggle("fa fa-eye-slash");
+	});
+	
+</script>
+	 -->
+
+<%- include("partials/footer") %>
+

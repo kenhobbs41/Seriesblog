@@ -1,0 +1,45 @@
+<%- include("partials/header") %> 
+
+<div class="container">
+<h1>
+	Add New Series
+</h1>
+	<form action="/home" method="POST">
+ <input type="text" name="series" placeholder="Series Name">
+ <input type="text" name="image" placeholder="Image Url">
+ <textarea type="text" name="data" placeholder="Details"></textarea>
+ <textarea type="text" name="premise" placeholder="Series Premise"></textarea>
+ <input type="url" name="link" placeholder="IMDb Link">
+ <input type="url" name="watch" placeholder="Netflix Link">
+ <input type="submit">
+	</form>
+</div> 
+<!--   
+<form style=width:800px; style=background-color:#fff;>
+	<h1>Add New Series</h1>
+  <div class="form-group">
+    <label for="series">Series Name</label>
+    <input type="text" class="form-control" id="series" aria-describedby="" placeholder="Enter Series Name">
+  </div>
+  <div class="form-group">
+    <label for="image">Image Url</label>
+    <input type="text" class="form-control" id="image" placeholder="Image Url"> 
+  </div>
+  <div class="form-group">
+    <label for="seriesdata">Data</label>
+	  <textarea type="text" class="form-control" id="seriesdata" placeholder="Data" style="hieght:60px;"></textarea> 
+  </div>
+  <div class="form-group">
+    <label for="IMDblink">IMDb Url</label>
+    <input type="url" class="form-control" id="IMDblink" placeholder="IMDb Url"> 
+  </div>
+  <div class="form-group">
+	 <label for="netflixlink">Netflix Url</label>
+    <input type="url" class="form-control" id="netflixlink" placeholder="Netflix Url">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+   -->
+<%- include("partials/footer") %> 
+
+

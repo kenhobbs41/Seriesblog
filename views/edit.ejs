@@ -1,0 +1,18 @@
+<%- include("partials/header") %> 
+
+<div class="container">
+<h1>
+	Add New Series
+</h1>
+	<form action="/home/<%=home._id%>?_method=PUT" method="POST">
+ <input type="text" name="home[series]" value="<%=home.series%>">
+ <input type="text" name="home[image]" value="<%=home.image%>">
+ <textarea type="text" name="home[data]" value="<%=home.data%>"></textarea>
+ <textarea type="text" name="home[premise]" value="<%=home.premise%>"></textarea>
+ <input type="url" name="home[link]" value="<%=home.link%>">
+ <input type="url" name="home[watch]" value="<%=home.watch%>">
+ <input type="submit">
+	</form>
+</div>
+
+<%- include("partials/footer") %> 

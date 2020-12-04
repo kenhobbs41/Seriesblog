@@ -1,0 +1,27 @@
+ <%- include("partials/header2") %>
+
+<div class="registerbox">
+	<img src="" class="avatar2">
+	<h1>Create an Account</h1>
+<form action="/register" method="POST">
+	<p>Username</p>
+    <input type="text" name="username" placeholder="Enter Username">
+    <p>First Name</p>
+	<input type="text" name="firstName" placeholder="Enter First Name">
+	<p>Last Name</p>
+	<input type="text" name="lastName" placeholder="Enter Last Name">
+	<p>Email Address</p>
+	<input type="email" name="email" placeholder="Enter Email">
+	<p>Password</p>
+    <input type="password" name="password" placeholder="Enter Password">
+	<input	type="submit" name="submit" value="Register">
+	<p>Do you have an account? <a href="/login"> Sign In</a>
+	<div class="hide">
+    <p class>Only for Admin</p>
+	<input type="password" name="adminCode" placeholder="">
+	</div>
+	</form>
+</div> 
+
+<%- include("partials/footer") %> 
+

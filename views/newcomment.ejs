@@ -1,0 +1,17 @@
+<%- include("partials/header3") %>
+
+<div class="reviewbox">
+	<h1>Add Review</h1>
+<form action="/home/<%= home._id%>/comments" method="POST">
+	 <div class="form-group">
+	<!-- <input type="text" name="username" placeholder="Enter Username"> -->
+    <textarea class="form-control" input="text" name="comment[text]" placeholder="Type your Review" rows="3"></textarea>
+  </div>
+	  <button class="ui inverted red button">Submit</button>
+</form>
+</div>
+
+
+<%- include("partials/footer") %>
+
+

@@ -1,0 +1,19 @@
+
+
+<%- include("partials/header2") %> 
+
+
+<div class="container2">
+		<% home.forEach(function(home){ %>
+<div class="card" style="width: 14rem;">
+  <img class="card-img-top" src="<%= home.image %>" alt="Card image cap">
+  <div class="card-body">
+    <h2 class="card-title" ><%= home.series %></h2>
+	   <a href="/home/<%= home._id %>"  class="ui black basic button">Details</a>
+	</div>
+	</div>
+	<% }); %>
+</div>
+
+<%- include("partials/footer") %> 
+

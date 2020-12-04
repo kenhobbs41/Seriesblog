@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Series Blog</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css"	href="/stylesheets/navbar.css">
+		<link rel="stylesheet" type="text/css"	href="/stylesheets/home.css">
+		<link rel="stylesheet" type="text/css"	href="/stylesheets/login.css">
+		<link rel="stylesheet" type="text/css"	href="/stylesheets/register.css">
+		<link rel="stylesheet" type="text/css"	href="/stylesheets/show.css">
+		<link rel="stylesheet" type="text/css"	href="/stylesheets/contact.css"> 
+
+		
+		
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header class="nav-head">
+				<a href="/"><img src="https://proxy-ap-south1.goorm.io//service/5edcf52b0f4852dbe55cdf27_dcqyub1y7dLS2OsZ2mh.run-ap-south1.goorm.io/9080//file/load/kisspng-theatre-computer-icons-mask-drama-actor-5ab9c754955902.4948570315221246286117.png?path=d29ya3NwYWNlJTJGTXlibG9nJTJGcHVibGljJTJGc3R5bGVzaGVldHMlMkZraXNzcG5nLXRoZWF0cmUtY29tcHV0ZXItaWNvbnMtbWFzay1kcmFtYS1hY3Rvci01YWI5Yzc1NDk1NTkwMi40OTQ4NTcwMzE1MjIxMjQ2Mjg2MTE3LnBuZw==&docker_id=dcqyub1y7dLS2OsZ2mh&secure_session_id=XCKsZaEvpQcrS-Bd8DOT8SeramNHpZul" class="logo"></a>
+		<nav>
+			<h3 href="/">hobb<span>S</span>eries</h3>
+			<ul>
+				<li><a href ="/home">Home</a></li>
+				<li><a href ="/contact">Contacts</a></li>
+					<% if(!currentUser){ %>
+				<li><a href ="/register">Sign Up</a></li>
+				<li><a href ="/login">Sign In</a></li>
+						<% }else{ %>
+				<a class="special">Signed in as <%= currentUser.username %></a>
+				<li><a href ="/logout">Sign Out</a></li>
+ 							<% } %>
+			</ul>
+		</nav>
+		</header>
+		
+		<div class="container1" style=padding-top:20px;>
+			<% if(error && error.length>0){ %>
+		<div class="alert alert-danger" role="alert">
+           <%= error %>
+        </div>
+			<% } %>
+			<% if(success && success.length>0){ %>
+			<div class="alert alert-success" role="alert">
+           <%= success %>
+			</div>
+			<% } %>
+		</div>
+	

@@ -1,0 +1,43 @@
+<%- include("partials/header2") %>
+
+<div class="full">
+<div class="container">
+	<div class="square"><img src="<%= home.image %>"></div>
+		<h1><%= home.series%></h1>
+		<p> <%= home.data%> </p>
+		<h2>Plot :</h2>
+		<p class="pre"> <%=home.premise%></p>
+		<p><em>Submitted by : <%=home.author.username%></em></p>
+	<div class="imdb-netflix">
+		<p><a class="i-n" href="<%= home.link%>">Go to IMDb</a></p>
+		<p><a class="i-n" href="<%= home.watch%>">Watch Now</a></p>
+	</div>
+			<% if(currentUser && home.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+		<a class="btn btn-warning" href="/home/<%=home._id%>/edit">Edit</a>
+		<form style="display:inline;" action="/home/<%=home._id%>?_method=DELETE" method="POST"> 
+			<button class="btn btn-danger">Delete</button>
+		</form>
+					<% } %>
+</div>
+	
+<div class="review">
+	<div class="text-right">
+		<a class="ui red button" href="/home/<%= home._id%>/comments/new">Add Review</a>
+	</div>
+	<% home.comments.forEach(function(comment){ %>
+	<div class="rev">
+		 <strong><%=comment.author.username%></strong>
+	<p><%= comment.text %></p>
+	</div>
+	   <% if(currentUser && comment.author.id.equals(currentUser._id)|| currentUser && currentUser.isAdmin){ %>
+	<form action="/home/<%=home._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
+		<input  type="submit" class="ui inverted red button" value="Delete">
+	</form>
+	   <%  } %>
+	<% }); %>
+</div>
+</div>
+
+<%- include("partials/footer") %>
+
+
