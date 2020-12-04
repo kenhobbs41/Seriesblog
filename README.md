@@ -1,0 +1,1 @@
+# hobbSeries is a personal blog about the english web series.In which it got some web series details like about the web series and the plot.User can also add their reviews about the series by creating a account
